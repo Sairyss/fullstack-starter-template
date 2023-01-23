@@ -3,7 +3,6 @@ import '../../../styles.css';
 import { ChakraProvider, theme } from '@chakra-ui/react';
 import { Story, Meta } from '@storybook/react';
 import AuthHeaderUI, { AuthHeaderProps } from './AuthHeaderUI';
-import { ReactNotifications } from 'react-notifications-component';
 
 export default {
   component: AuthHeaderUI,
@@ -12,7 +11,6 @@ export default {
 
 const Template: Story<AuthHeaderProps> = (args) => (
   <ChakraProvider theme={theme}>
-    <ReactNotifications />
     <AuthHeaderUI {...args} />
   </ChakraProvider>
 );
