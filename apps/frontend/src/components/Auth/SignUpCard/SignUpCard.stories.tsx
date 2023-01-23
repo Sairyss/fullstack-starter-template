@@ -1,5 +1,3 @@
-import 'react-notifications-component/dist/theme.css';
-import '../../../styles.css';
 import { ChakraProvider, theme } from '@chakra-ui/react';
 import { Story, Meta } from '@storybook/react';
 import SignUpCardUI from './SignUpCardUI';
