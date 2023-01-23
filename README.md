@@ -5,7 +5,7 @@ Monorepository TypeScript template for full stack applications.
 - Maximized for productivity
 - Based on cutting edge technologies
 - Follows best practices for project structure, architecture, security
-- Includes authentication/authorization module (OAuth2)
+- Includes authentication module
 
 ## Libraries/frameworks
 
@@ -21,7 +21,7 @@ This template includes a bunch of libraries to get you up and running quickly an
 - [Framer Motion](https://www.framer.com/motion/) - create beautiful motion animations ([compatible with ChakraUI](https://chakra-ui.com/getting-started/with-framer))
 - [React router](https://reactrouter.com/en/main) - for routing
 - [React Icons](https://react-icons.github.io/react-icons/) - icons for your app
-- [React-toastify](https://fkhadra.github.io/react-toastify/introduction) - show notifications when something happen
+- [React-toastify](https://fkhadra.github.io/react-toastify/introduction) - show notifications when something happens
 - [Cypress](https://www.cypress.io/) - end-to-end testing for your frontend
 - [Storybook](https://storybook.js.org/) - build your UI web components in isolation
 
