@@ -60,7 +60,6 @@ export const signIn = async (
     {
       id: user.id,
       roles: user.role,
-      // exp: Math.floor(Date.now() / 1000) + 60 * 1,
     },
     authConfig.secretKey,
     { expiresIn: authConfig.jwtExpiresIn }
