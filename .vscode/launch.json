@@ -1,0 +1,49 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Debug API",
+      "sourceMaps": true,
+      "restart": true,
+      "port": 9229,
+      "localRoot": "${workspaceFolder}/apps/backend/src"
+    }
+    // {
+    //   "type": "node",
+    //   "request": "launch",
+    //   "name": "Debug backend",
+    //   "cwd": "${workspaceFolder}",
+    //   "localRoot": "${workspaceFolder}/apps/backend",
+    //   "runtimeExecutable": "nx",
+    //   "runtimeArgs": ["serve", "backend", "--inspect"],
+    //   "skipFiles": ["<node_internals>/**", "${workspaceFolder}/node_modules/*"],
+    //   "outFiles": ["${workspaceFolder}/dist/**/*.js"]
+    // }
+    // {
+    //   "type": "node",
+    //   "request": "launch",
+    //   "name": "Debug Nest Framework",
+    //   "args": ["${workspaceFolder}/apps/backend/src/main.ts"],
+    //   "runtimeArgs": [
+    //     "--nolazy",
+    //     "-r",
+    //     "ts-node/register",
+    //     "-r",
+    //     "tsconfig-paths/register"
+    //   ],
+    //   "sourceMaps": true,
+    //   "cwd": "${workspaceRoot}/apps/backend/",
+    //   "internalConsoleOptions": "openOnSessionStart",
+    //   "protocol": "inspector",
+    //   "env": {
+    //     "TS_NODE_PROJECT": "${workspaceFolder}/apps/backend/tsconfig.json"
+    //   },
+    //   "skipFiles": ["<node_internals>/**", "node_modules/**"]
+    // }
+  ]
+}

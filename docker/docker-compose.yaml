@@ -1,0 +1,19 @@
+## Only for local development or running tests
+
+version: '3.4'
+
+services:
+  postgres:
+    image: postgres:alpine
+    container_name: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: 'user'
+      POSTGRES_PASSWORD: 'password'
+      POSTGRES_DB: 'my_app'
+    volumes:
+      - postgres:/var/lib/postgresql/data
+
+volumes:
+  postgres:
