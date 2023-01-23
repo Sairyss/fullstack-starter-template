@@ -1,5 +1,6 @@
 import { ChakraProvider, theme } from '@chakra-ui/react';
 import { Story, Meta } from '@storybook/react';
+import { BrowserRouter } from 'react-router-dom';
 import AuthHeaderUI, { AuthHeaderProps } from './AuthHeaderUI';
 
 export default {
@@ -9,7 +10,9 @@ export default {
 
 const Template: Story<AuthHeaderProps> = (args) => (
   <ChakraProvider theme={theme}>
-    <AuthHeaderUI {...args} />
+    <BrowserRouter>
+      <AuthHeaderUI {...args} />
+    </BrowserRouter>
   </ChakraProvider>
 );
 
