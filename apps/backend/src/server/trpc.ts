@@ -1,17 +1,17 @@
 import { initTRPC, TRPCError } from '@trpc/server';
 import superjson from 'superjson';
-import { serverConfig } from '../configs/server.config';
 import { Context } from './context';
 export { AppRouter } from './router';
 
 const t = initTRPC.context<Context>().create({
   transformer: superjson,
-  errorFormatter({ shape }) {
+  errorFormatter({ shape, error, ctx }) {
+    if (error.code === 'INTERNAL_SERVER_ERROR') {
+      ctx?.req.log.error(error);
+      return { ...shape, message: 'Internal server error' };
+    }
     return shape;
   },
-  isDev:
-    serverConfig.environment === 'development' ||
-    serverConfig.environment === 'local',
 });
 
 const isAuthenticated = t.middleware(({ next, ctx }) => {
