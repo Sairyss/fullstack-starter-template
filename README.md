@@ -17,13 +17,16 @@ This template includes a bunch of libraries to get you up and running quickly an
 - [Vite](https://vitejs.dev/) - modern and fast build tool
 - [React Query](https://react-query-v3.tanstack.com/) - react hooks to facilitate fetching/updating/caching data on the server
 - [Zustand](https://github.com/pmndrs/zustand) - easy state-management
-- [ChakraUI](https://chakra-ui.com/) - UI library that lets you create beautiful interfaces quickly
-- [Framer Motion](https://www.framer.com/motion/) - create beautiful motion animations ([compatible with ChakraUI](https://chakra-ui.com/getting-started/with-framer))
 - [React router](https://reactrouter.com/en/main) - for routing
-- [React Icons](https://react-icons.github.io/react-icons/) - icons for your app
-- [React-toastify](https://fkhadra.github.io/react-toastify/introduction) - show notifications when something happens
 - [Cypress](https://www.cypress.io/) - end-to-end testing for your frontend
 - [Storybook](https://storybook.js.org/) - build your UI web components in isolation
+
+#### Frontend UI
+
+- [ChakraUI](https://chakra-ui.com/) - UI library that lets you create beautiful interfaces quickly
+- [Framer Motion](https://www.framer.com/motion/) - create beautiful motion animations ([compatible with ChakraUI](https://chakra-ui.com/getting-started/with-framer))
+- [React Icons](https://react-icons.github.io/react-icons/) - icons for your app
+- [React-toastify](https://fkhadra.github.io/react-toastify/introduction) - show notifications when something happens
 
 ### Backend
 
