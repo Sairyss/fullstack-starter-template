@@ -2,6 +2,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
+import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   server: {
@@ -10,6 +11,7 @@ export default defineConfig({
   },
   plugins: [
     react(),
+    tsconfigPaths({ projects: ['./tsconfig.app.json']}),
     nxViteTsPaths(),
   ],
 
