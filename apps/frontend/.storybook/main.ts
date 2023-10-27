@@ -2,7 +2,6 @@
 import { rootMain } from '../../../.storybook/main';
 
 import { mergeConfig } from 'vite';
-import viteTsConfigPaths from 'vite-tsconfig-paths';
 
 module.exports = {
   ...rootMain,
@@ -12,17 +11,15 @@ module.exports = {
     '../src/**/*.stories.mdx',
     '../src/**/*.stories.@(js|jsx|ts|tsx)',
   ],
-  addons: ['@chakra-ui/storybook-addon', ...(rootMain.addons || [])],
+  addons: [
+    '@storybook/addon-essentials',
+    '@chakra-ui/storybook-addon',
+    ...(rootMain.addons || []),
+  ],
   features: {
     emotionAlias: false,
   },
   async viteFinal(config: any) {
-    return mergeConfig(config, {
-      plugins: [
-        viteTsConfigPaths({
-          root: '../../../',
-        }),
-      ],
-    });
+    return mergeConfig(config, {});
   },
 };
